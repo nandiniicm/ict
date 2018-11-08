@@ -1,0 +1,17 @@
+body
+{
+    background: yellow;
+}
+.myTr{
+    background:burlywood;
+}
+.mytitle{
+    margin-left: 100px;
+}
+.mydiv{
+    border: 1px solid black;
+    background-color: antiquewhite;
+    width: 500px;
+    margin-block-start: 100px;
+
+}
