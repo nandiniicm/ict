@@ -20,6 +20,8 @@ function Read(){
     var op=document.getElementById("district");
 var district=op.options[op.selectedIndex].value;
     console.log(district);
+    var phno= document.getElementById("getphno").value;
+    console.log(phno)
     }
 
     
@@ -37,16 +39,20 @@ var district=op.options[op.selectedIndex].value;
         var z=parseInt(Num3);
         if(x>y && x>z)
         {
-            console.log(x);
+           var rs=x;
         }
         else if(y>x && y>z)
         {
-            console.log(y);
+            var rs=y;
         }
-else (z>x && z>y)
+else if (z>x && z>y)
 {
-    console.log(z);
+    var rs=z;
 }
+else
+{var rs=error;
+}
+document.getElementById("result1").innerHTML="<table class='table'> <tr><td>result is<b>"+"</b><td/></tr>rs;
 }
 
 function smallest()
@@ -61,19 +67,22 @@ function smallest()
         var z=parseInt(Num3);
         if(x<y && x<z)
         {
-            console.log(x);
+            var res=x;
         }
         else if(y<x && y<z)
         {
             
-            console.log(y);
+            var res=y;
         }
 else if(z<x && z<y)
 {
     
-    console.log(z);
+    var res=z;
 
 }
 else
-console.log("error");
+{
+var res=error;
+}
+document.getElementById("result2").innerHTML=res;
 }
