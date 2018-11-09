@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+    <script>
+        function Add()
+    {
+        var num1= document.getElementById("getOPONE").value;
+        
+        var num2= document.getElementById("getOPTWO").value;
+        
+
+        var X=parseInt(num1);
+        var y=parseInt(num2);
+        if(oper=="add")
+        {
+            var num3=x+y;
+        }
+else if(oper=="sub")
+{
+    var num3=x-y;
+    console.log(num3);
+}
+else if(oper=="mul")
+{
+    var num3=x*y;
+    
+
+}
+else{
+    var num3=x/y;
+}
+        var num3=document.getElementById("oper");
+    var oper=(c.option[c.SelectIndex]).value;
+    }
+   </script>
+
+</head>
+<body>
+       
+        <div class="container">
+               
+               
+                <div class="row">
+                        <div class="col-sm-6">Operand1</div>
+                    <div class="col-sm-6"><input type="text"  id="getOPONE"/></div>
+                
+                </div>
+<br>
+
+                  <div class="row">
+                        <div class="col-sm-6">Operand2</div>
+                    <div class="col-sm-6"><input type="text"  id="getOPTWO"/></div>
+                <br>
+                </div> 
+
+                <div class="row">
+                        <div class="col-sm-6">Operand</div>
+                        <select id="oper">
+                            <option value="add">+</option>
+                            <option value="sub">-</option>
+                            <option value="mul">*</option>
+            <option value="div">/</option>
+                        </select>
+                        </div>
+                        <div class="row">
+                        <div class="col-sm-6"><Button class="btn btn-primary" Onclick="Add"();>ADD</Button>   </div>  
+                </div>
+
+        </div>
+        </div>
+
+    
+</body>
+</html>
